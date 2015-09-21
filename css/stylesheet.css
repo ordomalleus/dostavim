@@ -1,0 +1,67 @@
+.col-md-3{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row{
+}
+.b-page{
+    background: rgba(242,242,242,1);
+}
+.b-page__line{
+    position: relative;
+    margin-bottom: 20px;
+}
+.b-page__title{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.b-head{
+    margin: 0;
+}
+.b-line__content{
+    background: #fff;
+    padding: 20px 20px 0;
+    border: 1px solid #c6c6c6;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all .4s ease-in-out;
+    overflow-y: hidden;
+    max-height: 140px;
+}
+.b-line__content:hover{
+    max-height: inherit;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+.b-full-title{
+    text-align: left;
+}
+
+.b-title__name{
+    margin: 0;
+    font-size: 20px;
+}
+.b-content__full{
+}
+.b-full-price{
+    text-align: center;
+}
+.b-price__number{
+    color: #bcbcbc;
+    display: inline-block;
+}
+/*медиа запросы*/
+@media (max-width: 980px) {
+    .b-line__content {
+        max-height: none;
+    }
+    .b-line__content:hover{
+        position: inherit;
+    }
+    .b-full-title{}
+}
+
+@media (max-width: 767px) {
+    .head-menu {}
+}
