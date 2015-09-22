@@ -19,47 +19,28 @@ $(window).load(function () {
     });
     //==========================================================
 
+    //добовление в корзину
+    $(function(){
+        $(".price__basket").on('click', function() {
+            var b_line_content_basket = $(this).parent().parent('.b-line__content');
+            if ($(this).hasClass('price__basket--off')) {
+                $(this).removeClass('price__basket--off');
+                $(this).addClass('price__basket--on');
+                b_line_content_basket.addClass('b-line__content--basket');
+                //заглушка для иконки
+                $(this).html('+');
 
-
-
-
-    //==========================================================
-
-
-
-    //==========================================================
-
-    //фиксация меню при скроле
-    $(function () {
-        var offset = $("nav.navbar").offset();
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > offset.top) {
-                $("nav.navbar").addClass("navbar-fixed-top");
-                $("#about").css('padding-top', 90);
             } else {
-                $("nav.navbar").removeClass("navbar-fixed-top");
-                $("#about").css('padding-top', 40);
+                $(this).removeClass('price__basket--on');
+                $(this).addClass('price__basket--off');
+                b_line_content_basket.removeClass('b-line__content--basket');
+                //заглушка для иконки
+                $(this).html('-');
             }
         });
     });
 
     //==========================================================
-
-    //отриосвка % скила в зависимости от значения атрибута data
-    $(function () {
-        $(".skillbar").each(function () {
-            var a = $(this).find(".skillbar-percent").data('skillbarPercent');
-            $(this).find(".skillbar-bar").css("width", a);
-            $(this).find(".skillbar-percent").html(a);
-        });
-    });
-
-    //================================================
-
-
-
-    //======================================================
-
 
 
 })

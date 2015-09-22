@@ -2,17 +2,18 @@
 @font-face {
     font-family: "HelveticaItalic";
     src: url("/css/fonts/HelveticaItalic/HelveticaItalic.eot");
-    src: url("/css/fonts/HelveticaItalic/HelveticaItalic.eot?#iefix")format("embedded-opentype"),
+    src: url("/css/fonts/HelveticaItalic/HelveticaItalic.eot?#iefix") format("embedded-opentype"),
     url("/css/fonts/HelveticaItalic/HelveticaItalic.woff") format("woff"),
     url("/css/fonts/HelveticaItalic/HelveticaItalic.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+
 /* font-family: "HelveticaBlack"; */
 @font-face {
     font-family: "HelveticaBlack";
     src: url("/css/fonts/HelveticaBlack/HelveticaBlack.eot");
-    src: url("/css/fonts/HelveticaBlack/HelveticaBlack.eot?#iefix")format("embedded-opentype"),
+    src: url("/css/fonts/HelveticaBlack/HelveticaBlack.eot?#iefix") format("embedded-opentype"),
     url("/css/fonts/HelveticaBlack/HelveticaBlack.woff") format("woff"),
     url("/css/fonts/HelveticaBlack/HelveticaBlack.ttf") format("truetype");
     font-style: normal;
@@ -20,7 +21,6 @@
 }
 
 /*===================шрифты конец==============================================*/
-
 
 .col-md-3, .col-md-12 {
     padding-left: 10px;
@@ -62,6 +62,9 @@
     height: 140px;
     cursor: pointer;
 }
+.b-line__content--basket{
+    background: #91CAFF;
+}
 
 .b-line__content:hover {
     height: 300px;
@@ -87,30 +90,51 @@
 .b-line__content:hover .title__name--hover {
     max-height: 70px;
 }
-.content__info{
+
+.content__info {
     text-align: center;
 }
-.price__number{
+
+.price__number {
     display: inline-block;
 }
-.price__favorites{
+
+/*избранное*/
+.price__favorites {
     display: inline-block;
     width: 15px;
     height: 15px;
     font-size: 25px;
 }
-.price__favorites--off{
-     color: #c12e2a;
- }
-.price__favorites--on{
+
+.price__favorites--off {
+    color: #c12e2a;
+}
+
+.price__favorites--on {
     color: #449d44;
 }
-.price__basket{
+
+/*избранное*/
+
+/*корзина*/
+.price__basket {
     display: inline-block;
     width: 15px;
     height: 15px;
     font-size: 25px;
 }
+
+.price__basket--off {
+
+}
+
+.price__basket--on {
+    color: #ec971f;
+}
+
+/*корзина*/
+
 .b-page__button {
     display: block;
     background: rgba(242, 242, 242, 1);
@@ -150,9 +174,10 @@
     padding-right: 0px;
     padding-left: 0px;
 }
+
 .row {
-    margin-right: 0px!important;
-    margin-left: 0px!important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
 @media (min-width: 1200px) {
@@ -160,6 +185,7 @@
         width: 960px !important;
     }
 }
+
 /*
     шрифты - helvetica
 */
