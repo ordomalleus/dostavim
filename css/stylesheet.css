@@ -87,8 +87,28 @@
 .b-line__content:hover .title__name--hover {
     max-height: 70px;
 }
+.content__info{
+    text-align: center;
+}
 .price__number{
     display: inline-block;
+}
+.price__favorites{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+}
+.price__favorites--off{
+     color: #c12e2a;
+ }
+.price__favorites--on{
+    color: #449d44;
+}
+.price__basket{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
 }
 .b-page__button {
     display: block;
