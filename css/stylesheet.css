@@ -1,3 +1,27 @@
+/* font-family: "HelveticaItalic"; */
+@font-face {
+    font-family: "HelveticaItalic";
+    src: url("/css/fonts/HelveticaItalic/HelveticaItalic.eot");
+    src: url("/css/fonts/HelveticaItalic/HelveticaItalic.eot?#iefix")format("embedded-opentype"),
+    url("/css/fonts/HelveticaItalic/HelveticaItalic.woff") format("woff"),
+    url("/css/fonts/HelveticaItalic/HelveticaItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaBlack"; */
+@font-face {
+    font-family: "HelveticaBlack";
+    src: url("/css/fonts/HelveticaBlack/HelveticaBlack.eot");
+    src: url("/css/fonts/HelveticaBlack/HelveticaBlack.eot?#iefix")format("embedded-opentype"),
+    url("/css/fonts/HelveticaBlack/HelveticaBlack.woff") format("woff"),
+    url("/css/fonts/HelveticaBlack/HelveticaBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*===================шрифты конец==============================================*/
+
+
 .col-md-3, .col-md-12 {
     padding-left: 10px;
     padding-right: 10px;
@@ -8,6 +32,7 @@
 
 .b-page {
     background: rgba(242, 242, 242, 1);
+    font-family: "HelveticaItalic", Helvetica, Arial, sans-serif;
 }
 
 .row--hidden {
@@ -101,8 +126,8 @@
 
 /* сетка */
 .container {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .row {
     margin-right: 0px!important;
