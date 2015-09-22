@@ -97,7 +97,7 @@
     display: inline-block;
     width: 15px;
     height: 15px;
-    font-size: 15px;
+    font-size: 25px;
 }
 .price__favorites--off{
      color: #c12e2a;
@@ -109,6 +109,7 @@
     display: inline-block;
     width: 15px;
     height: 15px;
+    font-size: 25px;
 }
 .b-page__button {
     display: block;
