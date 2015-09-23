@@ -46,7 +46,7 @@ $(window).load(function () {
         $(".b-page__button").on('click', function(event) {
             event.preventDefault();
             $('.b-page__tovar--hiden').each(function(i,elem) {
-                if (i === 11) {
+                if (i === 12) {
                     return false;
                 } else {
                     $(this).removeClass('b-page__tovar--hiden');
