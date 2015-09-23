@@ -19,7 +19,16 @@
     font-style: normal;
     font-weight: normal;
 }
-
+/* font-family: "HelveticaRegular"; */
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("/css/fonts/HelveticaRegular/HelveticaRegular.eot");
+    src: url("/css/fonts/HelveticaRegular/HelveticaRegular.eot?#iefix") format("embedded-opentype"),
+    url("/css/fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("/css/fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 /*===================шрифты конец==============================================*/
 
 .col-md-3, .col-md-12 {
@@ -32,7 +41,7 @@
 
 .b-page {
     background: rgba(242, 242, 242, 1);
-    font-family: "HelveticaItalic", Helvetica, Arial, sans-serif;
+    font-family: "HelveticaRegular", Helvetica, Arial, sans-serif;
 }
 
 .row--hidden {
