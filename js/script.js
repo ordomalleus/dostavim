@@ -6,14 +6,14 @@ $(window).load(function () {
         $(".price__favorites").on('click', function() {
             if ($(this).hasClass('price__favorites--off')) {
                 $(this).removeClass('price__favorites--off');
+                $(this).removeClass('glyphicon-star-empty');
+                $(this).addClass('glyphicon-star');
                 $(this).addClass('price__favorites--on');
-                //заглушка для иконки
-                //$(this).html('+');
             } else {
                 $(this).removeClass('price__favorites--on');
+                $(this).removeClass('glyphicon-star');
                 $(this).addClass('price__favorites--off');
-                //заглушка для иконки
-                //$(this).html('-');
+                $(this).addClass('glyphicon-star-empty');
             }
         });
     });
