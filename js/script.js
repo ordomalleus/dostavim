@@ -8,12 +8,12 @@ $(window).load(function () {
                 $(this).removeClass('price__favorites--off');
                 $(this).addClass('price__favorites--on');
                 //заглушка для иконки
-                $(this).html('+');
+                //$(this).html('+');
             } else {
                 $(this).removeClass('price__favorites--on');
                 $(this).addClass('price__favorites--off');
                 //заглушка для иконки
-                $(this).html('-');
+                //$(this).html('-');
             }
         });
     });
