@@ -29,7 +29,6 @@ $(window).load(function () {
                 b_line_content_basket.addClass('b-line__content--basket');
                 //заглушка для иконки
                 $(this).html('+');
-
             } else {
                 $(this).removeClass('price__basket--on');
                 $(this).addClass('price__basket--off');
@@ -41,6 +40,22 @@ $(window).load(function () {
     });
 
     //==========================================================
+
+    //добовление новых 12 товаров
+    $(function(){
+        $(".b-page__button").on('click', function(event) {
+            event.preventDefault();
+            $('.b-page__tovar--hiden').each(function(i,elem) {
+                if (i === 11) {
+                    return false;
+                } else {
+                    $(this).removeClass('b-page__tovar--hiden');
+                }
+            });
+        });
+    });
+
+
 
 
 })

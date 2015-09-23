@@ -140,7 +140,9 @@
     background: rgba(242, 242, 242, 1);
     border-radius: 0;
 }
-
+.b-page__tovar--hiden{
+    display: none;
+}
 .content__images {
     text-align: center;
     height: 140px;
