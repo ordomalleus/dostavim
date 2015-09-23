@@ -25,16 +25,16 @@ $(window).load(function () {
             var b_line_content_basket = $(this).parent().parent('.b-line__content');
             if ($(this).hasClass('price__basket--off')) {
                 $(this).removeClass('price__basket--off');
+                $(this).removeClass('fa-shopping-cart');
                 $(this).addClass('price__basket--on');
+                $(this).addClass('fa-cart-plus');
                 b_line_content_basket.addClass('b-line__content--basket');
-                //заглушка для иконки
-                $(this).html('+');
             } else {
                 $(this).removeClass('price__basket--on');
+                $(this).removeClass('fa-cart-plus');
                 $(this).addClass('price__basket--off');
+                $(this).addClass('fa-shopping-cart');
                 b_line_content_basket.removeClass('b-line__content--basket');
-                //заглушка для иконки
-                $(this).html('-');
             }
         });
     });

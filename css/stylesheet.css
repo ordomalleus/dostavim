@@ -63,7 +63,7 @@
     cursor: pointer;
 }
 .b-line__content--basket{
-    background: #91CAFF;
+    background: #ccefdf;
 }
 
 .b-line__content:hover {
@@ -134,28 +134,50 @@
 
 /*избранное*/
 
-/*корзина*/
+/*корзина 3 состояния кнопки для отображения*/
 .price__basket {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    font-size: 25px;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
 }
 
 .price__basket--off {
-
+    color: #a3a3a3;
 }
 
 .price__basket--on {
-    color: #ec971f;
+    color: #05cd58;
+    position: absolute;
+    top:43px;
+    left: 120px;
+}
+.b-line__content:hover .price__basket--on {
+    color: #05cd58;
+    position: relative;
+    left: 20px;
+    top: 0;
 }
 
 /*корзина*/
+.price__weight{
+    position: absolute;
+    top: 43px;
+    left: 105px;
+    color: #a3a3a3;
+}
+.b-line__content:hover .price__weight{
+    text-align: center;
+    position: static;
+}
+
 
 .b-page__button {
     display: block;
     background: rgba(242, 242, 242, 1);
     border-radius: 0;
+    font-size: 18px;
+    padding: 16px 12px;
 }
 .b-page__tovar--hiden{
     display: none;
