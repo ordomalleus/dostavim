@@ -19,6 +19,7 @@
     font-style: normal;
     font-weight: normal;
 }
+
 /* font-family: "HelveticaRegular"; */
 @font-face {
     font-family: "HelveticaRegular";
@@ -29,6 +30,7 @@
     font-style: normal;
     font-weight: normal;
 }
+
 /*===================сетка==============================================*/
 .container {
     padding-right: 0px;
@@ -48,6 +50,7 @@
 .row {
 
 }
+
 /*===================сетка==============================================*/
 .b-page {
     background: rgba(242, 242, 242, 1);
@@ -81,7 +84,8 @@
     height: 140px;
     cursor: pointer;
 }
-.b-line__content--basket{
+
+.b-line__content--basket {
     background: #ccefdf;
 }
 
@@ -124,13 +128,14 @@
     margin-left: 22px;
     font-size: 24px;
 }
-.number__rub{
+
+.number__rub {
     font-size: 20px;
     margin-left: -5px;
 }
 
 /*избранное 3 состояния кнопки для отображения*/
-.price__favorites{
+.price__favorites {
     font-size: 20px;
     display: inline-block;
     padding-left: 2px;
@@ -143,9 +148,10 @@
 .price__favorites--on {
     color: #05cd58;
     position: absolute;
-    top:43px;
+    top: 43px;
     left: 78px;
 }
+
 .b-line__content:hover .price__favorites--on {
     color: #05cd58;
     position: relative;
@@ -154,6 +160,38 @@
 }
 
 /*избранное*/
+
+/*Touch устройство ввода / перекрывает все по умолчанию / удаляет класс .b-line__content--touch если не тачь устройство*/
+.b-line__content--touch {
+    height: 300px;
+}
+
+.b-line__content--touch .title__name--hover {
+    max-height: 70px;
+    font-size: 15px;
+}
+.b-line__content--touch .glyphicon{
+    position: static;
+}
+.b-line__content--touch.b-line__content .price__favorites--on {
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 2px;
+    position: static;
+}
+.b-line__content--touch.b-line__content .price__basket--on {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    left: 20px;
+    top: 0;
+}
+.b-line__content--touch .price__weight {
+    position: static;
+    text-align: center;
+}
+
+/*Touch устройство ввода*/
 
 /*корзина 3 состояния кнопки для отображения*/
 .price__basket {
@@ -170,9 +208,10 @@
 .price__basket--on {
     color: #05cd58;
     position: absolute;
-    top:43px;
+    top: 43px;
     left: 120px;
 }
+
 .b-line__content:hover .price__basket--on {
     color: #05cd58;
     position: relative;
@@ -181,17 +220,17 @@
 }
 
 /*корзина*/
-.price__weight{
+.price__weight {
     position: absolute;
     top: 43px;
     left: 105px;
     color: #a3a3a3;
 }
-.b-line__content:hover .price__weight{
+
+.b-line__content:hover .price__weight {
     text-align: center;
     position: static;
 }
-
 
 .b-page__button {
     display: block;
@@ -200,9 +239,11 @@
     font-size: 18px;
     padding: 16px 12px;
 }
-.b-page__tovar--hiden{
+
+.b-page__tovar--hiden {
     display: none;
 }
+
 .content__images {
     text-align: center;
     height: 140px;
@@ -220,16 +261,20 @@
         width: 960px !important;
     }
 }
+
 @media (min-width: 800px) and (max-width: 1059px) {
     .container {
         width: 720px !important;
     }
-    .col-md-3{
-        width: 33.33333333%!important;
+
+    .col-md-3 {
+        width: 33.33333333% !important;
     }
-    .col-sm-4{
-        width: 33.33333333%!important;
+
+    .col-sm-4 {
+        width: 33.33333333% !important;
     }
+
     .b-line__content {
         max-height: none;
     }
@@ -240,20 +285,25 @@
     .b-full-title {
     }
 }
+
 @media (min-width: 540px) and (max-width: 799px) {
     .container {
         width: 480px !important;
     }
-    .col-sm-4{
-        width: 50%!important;
+
+    .col-sm-4 {
+        width: 50% !important;
     }
+
     .head-menu {
     }
 }
+
 @media (min-width: 300px) and (max-width: 539px) {
     .container {
         width: 320px !important;
     }
+
     .b-page__line {
         position: relative;
         margin-bottom: 20px;
