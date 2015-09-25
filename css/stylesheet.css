@@ -146,6 +146,9 @@
     display: inline-block;
     width: 24px;
     height: 24px;
+    position: relative;
+    left: -13px;
+    top: 4px;
 }
 
 .price__favorites--off {
@@ -185,7 +188,9 @@
 .b-line__content--touch .b-line__content {
     height: 300px;
 }
-
+.b-line__content--touch .b-line__content:hover {
+    position: static;
+}
 .b-line__content--touch .title__name--hover {
     max-height: 70px;
     font-size: 15px;
@@ -233,9 +238,10 @@
     left: 20px;
     */
     display: inline-block;
-
     width: 18px;
     height: 18px;
+    position: relative;
+    left: 8px;
 }
 
 .price__basket--off {
@@ -274,7 +280,7 @@
     text-align: center;
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 42px;
     width: 100%;
 }
 
@@ -405,6 +411,9 @@
         margin-bottom: 20px;
         max-width: 300px;
         min-height: 180px;
+    }
+    .b-line__content {
+        height: 180px;
     }
 
 }
