@@ -87,6 +87,7 @@
 
 .b-line__content--basket {
     background: #ccefdf;
+    border: 1px solid #ccefdf;
 }
 
 .b-line__content:hover {
@@ -133,8 +134,8 @@
 }
 
 .number__rub {
-    font-size: 20px;
-    margin-left: -5px;
+    font-size: 12px;
+    margin-left: -3px;
 }
 
 /*избранное 3 состояния кнопки для отображения*/
