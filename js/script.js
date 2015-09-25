@@ -60,11 +60,13 @@ $(window).load(function () {
                 $(this).addClass('price__basket--on');
                 b_line_content_basket.addClass('b-line__content--basket');
                 $(this).parent().find('.price__weight').addClass('price__weight--basket');
+                b_line_content_basket.find('.content__images').append("<div class='test__lol'></div>");
             } else {
                 $(this).removeClass('price__basket--on');
                 $(this).addClass('price__basket--off');
                 b_line_content_basket.removeClass('b-line__content--basket');
                 $(this).parent().find('.price__weight').removeClass('price__weight--basket');
+                b_line_content_basket.find('.test__lol').remove();
             }
         });
     });
