@@ -203,8 +203,8 @@
 
 /*медиа запросы*/
 @media (max-width: 980px) {
-    .b-line__content {
-        max-height: none;
+    .b-line__content,.b-page__line {
+        min-height: 300px;
     }
 
     .b-line__content:hover {
@@ -216,6 +216,14 @@
 
 @media (max-width: 767px) {
     .head-menu {
+    }
+}
+@media (min-width: 481px) and (max-width: 766px){
+    .container{
+        max-width: 600px;
+    }
+    .col-xs-12{
+        width: 50%;
     }
 }
 
