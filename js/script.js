@@ -25,7 +25,7 @@ $(window).load(function () {
 
     //уберает класс у товара если не Touch
     $(function () {
-        if (!is_touch_device()){
+        if (is_touch_device()){
             $('.b-line__content--touch').each(function () {
                 $(this).removeClass('b-line__content--touch');
             });
