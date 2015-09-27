@@ -145,18 +145,19 @@
     padding-left: 2px;
     */
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     position: relative;
     left: -13px;
     top: 4px;
+    background: url("/css/img/ico_favorites.png");
+    background-repeat: no-repeat;
 }
 
 .price__favorites--off {
     /*
     color: #a3a3a3;
     */
-    background: url("/css/img/favorite--off.png");
 }
 
 .price__favorites--on {
@@ -165,8 +166,9 @@
     position: absolute;
     top: 43px;
     left: 78px;
-    */
     background: url("/css/img/favorite--on.png");
+    */
+    background-position: 0% 50%;
 }
 
 .b-line__content:hover .price__favorites--on {
@@ -239,21 +241,26 @@
     left: 20px;
     */
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     position: relative;
-    left: 8px;
+    left: 11px;
+    top: 3px;
+    background: url("/css/img/ico_shoping-cart.png");
 }
 
 .price__basket--off {
     /*
     color: #a3a3a3;
-    */
     background: url("/css/img/korzina--off.png");
+    */
 }
 
 .price__basket--off:hover {
+    /*
     background: url("/css/img/korzina--off--hover.png");
+    */
+    background-position: 0% 50%;
 }
 
 .price__basket--on {
@@ -263,8 +270,11 @@
     top: 43px;
     left: 120px;
     */
+    /*
     height: 20px;
     background: url("/css/img/korzina--on.png");
+    */
+    background-position: 0% 102%;
 }
 
 .b-line__content:hover .price__basket--on {
@@ -300,20 +310,25 @@
 
 .price__weight--favorites:before {
     content: ' ';
-    background: url("/css/img/favorite--on.png");
+    background: url("/css/img/ico_favorites.png");
+    background-position: 0% 100%;
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     left: 0;
-    top: -3px;
+    top: 0px;
 }
 
 .price__weight--basket:after {
     content: ' ';
+    /*
     background: url("/css/img/korzina--on.png");
+    */
+    background: url("/css/img/ico_shoping-cart.png");
+    background-position: 0% 100%;
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     right: 0;
     top: 0px;
 }
