@@ -109,7 +109,19 @@
     margin: 0;
     font-size: 20px;
     max-height: 20px;
+    /*
     overflow: hidden;
+    */
+    overflow-y: hidden;
+    overflow-x: inherit;
+    position: relative;
+    padding-right: 20px;
+}
+.title__name:after{
+    content: '...';
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .b-line__content:hover .title__name--hover {
