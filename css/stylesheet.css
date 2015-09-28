@@ -167,7 +167,7 @@
 .number__rub:after{
     content: '=';
     position: absolute;
-    margin-left: -20px;
+    margin-left: -0.8em;
 }
 
 /*избранное 3 состояния кнопки для отображения*/
@@ -234,7 +234,13 @@
 }
 .b-line__content--touch .title__name--hover {
     max-height: 70px;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 16px;
+    text-overflow: clip;
+    white-space: normal;
+}
+.b-line__content--touch:hover .title__name--hover {
+    margin-top: 0;
 }
 
 /*
@@ -473,7 +479,6 @@
     .container {
         width: 320px !important;
     }
-
     .b-page__line {
         position: relative;
         margin-bottom: 20px;
@@ -483,6 +488,10 @@
     .b-line__content {
         height: 180px;
     }
+    .b-line__content:hover{
+        height: 180px;
+        position: static;
+    }
     .b-line__content--touch .b-line__content {
         height: 180px;
     }
@@ -491,26 +500,35 @@
         top: 30px;
         left: 140px;
         width: 125px;
-        font-size: 20px;
-        height: 40px;
+        font-size: 14px;
+        height: 34px;
         overflow: hidden;
         padding: 0;
         margin-bottom: 10px;
     }
     .b-line__content--touch .title__name--hover {
-        max-height: 35px;
-        font-size: 15px;
-    }
+         max-height: 34px;
+         font-size: 14px;
+     }
+    .title__name--hover {
+          max-height: 40px;
+          font-size: 14px;
+      }
     .title__name {
         text-align: left;
         margin: 0;
-        font-size: 20px;
-        max-height: 20px;
+        font-size: 14px;
+        max-height: 34px;
+        line-height: 16px;
         overflow: hidden;
+        text-overflow: clip;
+        white-space: normal;
     }
     .b-line__content:hover .title__name--hover {
-        max-height: 35px;
-        font-size: 15px;
+        max-height: 34px;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 0px;
     }
     .content__images{
         position: absolute;
@@ -551,13 +569,31 @@
         top: 70px;
         left: 140px;
     }
+    .price_obertka--wight {
+         text-align: left;
+         position: absolute;
+         max-width: 150px;
+         top: 70px;
+         left: 140px;
+     }
     .b-line__content:hover .price_obertka--wight {
         position: absolute;
         max-width: 150px;
     }
     .number__rub {
-        font-size: 12px;
+        font-size: 15px;
+        /*
         margin-left: -3px;
+        */
     }
+    .price__weight--favorites::before {
+        display: none;
+    }
+    .test__lol,
+    .price__weight--favorites:before,
+    .price__weight--basket:after{
+        display: none;
+    }
+
 
 }
