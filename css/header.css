@@ -1,0 +1,45 @@
+/* font-family: "HelveticaRegular"; */
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("/css/fonts/HelveticaRegular/HelveticaRegular.eot");
+    src: url("/css/fonts/HelveticaRegular/HelveticaRegular.eot?#iefix") format("embedded-opentype"),
+    url("/css/fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("/css/fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*===================сетка==============================================*/
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.col-md-3, .col-md-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*===================сетка==============================================*/
+body{
+    font-size: 10px;
+}
+.b-header {
+    background: rgba(242, 242, 242, 1);
+    font-family: "HelveticaRegular", Helvetica, Arial, sans-serif;
+}
+/*===================Хедер меню==============================================*/
+
+/*===================Конец Хедер меню========================================*/
+
+/*медиа запросы*/
+@media (min-width: 1060px) {
+    .container {
+        width: 960px !important;
+    }
+}
