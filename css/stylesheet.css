@@ -86,7 +86,9 @@
 }
 
 .b-line__content--basket {
+    /*
     background: #ccefdf;
+    */
     border: 1px solid #00c853;
 }
 
