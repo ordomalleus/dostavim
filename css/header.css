@@ -25,17 +25,158 @@
     padding-right: 10px;
 }
 
-/*===================сетка==============================================*/
-body{
+.navbar__header .row {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+/*===================Конец сетка==========================================*/
+body {
     font-size: 10px;
 }
+
 .b-header {
-    background: rgba(242, 242, 242, 1);
+    background: rgba(255, 255, 255, 1);
     font-family: "HelveticaRegular", Helvetica, Arial, sans-serif;
 }
+
 /*===================Хедер меню==============================================*/
+.navbar__header {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header__logo,
+.header__separator {
+    float: left;
+}
+
+.header__separator {
+    /*
+    width: 0.1rem;
+    height: 4rem;
+    border: 1px solid #e5e5e5;
+    */
+    display: inline-block;
+    margin: 0 2rem;
+    margin-top: 0.5rem;
+}
+
+/*форма поиска*/
+.header__search {
+    display: inline-block;
+    position: relative;
+    margin-top: 0.5rem;
+}
+
+.search__obertka {
+    display: inline-block;
+}
+
+.obertka__input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32rem;
+    height: 4rem;
+    border: 0.1rem solid #d9d9d9;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 1.4rem;
+    line-height: 1.42857143;
+    color: #d2d2d2;
+    transition: border-color ease-in-out .15s;
+}
+
+.search__sumbit {
+    border: none;
+    padding: 0;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url("/css/img/header/search.png");
+    position: absolute;
+    right: 1rem;
+    top: 1.3rem;
+}
+
+/*форма поиска конец*/
+.header__button {
+    margin-top: 0.5rem;
+    display: inline-block;
+    float: right;
+    height: 4rem;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    border: 0.1rem solid #00c853;
+    border-radius: 5px;
+    position: relative;
+    vertical-align: middle;
+    color: #7f7f7f;
+}
+
+.header__button:hover {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+.header__button--basket {
+    margin-right: 2rem;
+}
+.header__button span{
+    /*position: absolute;*/
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.header__button p{
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+.header__button--basket span {
+    background: url("/css/img/header/cart_btn.png") no-repeat;
+}
+
+.header__button--profil span {
+    background: url("/css/img/header/user_btn.png") no-repeat;
+}
 
 /*===================Конец Хедер меню========================================*/
+
+/*===================Меню==============================================*/
+.menu__level-1,
+.level-2__ul {
+    list-style: none;
+}
+
+.menu__level-1 {
+    margin: 0 1em;
+    padding: 0;
+    border-top: 0.1rem solid #e5e5e5;
+    border-bottom: 0.1rem solid #e5e5e5;
+}
+
+.level-1__li {
+    height: 5rem;
+    /*
+    width: 14rem;
+    */
+    margin: 0 1em;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 5rem;
+    text-align: justify;
+    color: #666666;
+}
+
+.level-1__li:first-child {
+    margin-left: 0;
+}
+
+/*===================Конец Меню=========================================*/
 
 /*медиа запросы*/
 @media (min-width: 1060px) {
