@@ -55,7 +55,20 @@ body {
     margin: 3rem 0;
     text-align: center;
 }
-
+.navbar-toggle.header__toggle{
+    width: 5rem;
+    height: 4rem;
+    border: 0.1rem solid #00c853;
+    margin: 0.5rem 3rem 0 0;
+}
+.navbar-toggle.header__toggle .icon-bar {
+    background: #000;
+    display: block;
+    width: 1.8rem;
+    height: 0.3rem;
+    border-radius: 1px;
+    margin-left: 0.5rem;
+}
 .header__logo {
     display: inline-block;
 }
@@ -63,6 +76,17 @@ body {
 .header__logo,
 .header__separator {
     float: left;
+
+}
+.header__logo--dostavim{
+    width: 9.5rem;
+    height: 4.4rem;
+    background: url("/css/img/header/dostavim_logo.png") no-repeat;
+}
+.header__logo--magazin{
+    width: 15.1rem;
+    height: 4.5rem;
+    background: url("/css/img/header/firma_logo.png") no-repeat;
 }
 
 .header__separator {
@@ -74,6 +98,9 @@ body {
     display: inline-block;
     margin: 0 2rem;
     margin-top: 0.5rem;
+    width: 0.1rem;
+    height: 4rem;
+    background: url("/css/img/header/separator.png") no-repeat;
 }
 
 /*форма поиска*/
@@ -168,7 +195,7 @@ body {
 }
 
 .menu__level-1 {
-    margin: 0 1em;
+    margin: 0;
     padding: 0;
     border-top: 0.1rem solid #e5e5e5;
     border-bottom: 0.1rem solid #e5e5e5;
@@ -246,6 +273,7 @@ body {
 
 /*Конец 2 уровень*/
 
+
 /*===================Конец Меню=========================================*/
 
 /*медиа запросы*/
@@ -253,4 +281,93 @@ body {
     .container {
         width: 960px !important;
     }
+}
+@media (min-width: 800px) and (max-width: 1059px) {
+    /*Начало сетка*/
+    .container {
+        width: 720px !important;
+    }
+
+    .col-md-2 {
+        width: 14rem !important;
+    }
+
+    .col-sm-4 {
+        width: 14rem !important;
+    }
+    /*Конец сетка*/
+    /*
+    .b__navbar{
+        position: fixed;
+        z-index: 1;
+        background: #fff;
+    }*/
+    /*Хедер меню*/
+    .navbar__header {
+        margin: 0 0 8rem 0;
+    }
+    .header__toggle{
+        display: inline-block;
+        float: left;
+    }
+    .header__logo--magazin{
+        width: 4rem;
+        height: 4.6rem;
+        /*
+        margin-top: 0.5rem;
+        */
+        background-position: 100% 100%;
+    }
+    .obertka__input {
+        width: 25rem;
+    }
+    .header__button p {
+        display: none;
+    }
+    /*Конец Хедер меню*/
+    /*Начало Меню*/
+    .navbar__menu{
+        display: none;
+    }
+        /*начало 1 уровень*/
+    .menu__level-1{
+        border: none;
+    }
+    .level-1__li {
+        display: block;
+        width: 18rem;
+        padding-left: 2rem;
+    }
+    .level-1__li.active{
+        color: #222;
+        /*
+        border-top: 0.1rem solid #00c853;
+        border-left: 0.1rem solid #00c853;
+        border-bottom: 0.1rem solid #00c853;
+        */
+        border: 0.1rem solid #00c853;
+    }
+    /*
+    .level-1__li.active .level-2__ul{
+        display: block;
+    }
+    */
+    /*
+    .level-1__li .level-2__ul {
+        margin-top: 0;
+    }
+    */
+        /*конец 1 уровень*/
+        /*начало 2 уровень*/
+    .level-2__ul{
+        padding: 0;
+        top: 0;
+        left: 24rem;
+    }
+    .level-2__li{
+        height: 16rem;
+    }
+        /*конец 2 уровень*/
+    /*Конец Меню*/
+
 }
