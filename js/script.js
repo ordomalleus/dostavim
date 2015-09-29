@@ -90,10 +90,28 @@ $(window).load(function () {
     //==========================================================
 
     //скрипт для меню
+    /*
     $(function () {
-        $("").on('click', function () {
+        $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li").hover(
+            function(){
+                $(this).find("ul.level-2__ul").css("display","block");
+            },
+            function(){
+                $(this).find("ul.level-2__ul").css("display","none");
+            }
+        );
+    });
+    */
 
-        });
+    $(function () {
+        $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li").hover(
+            function(){
+                $(this).find("ul.level-2__ul").stop(false,true).fadeIn(300);
+            },
+            function(){
+                $(this).find("ul.level-2__ul").stop(false,true).fadeOut(300);
+            }
+        );
     });
 
     //==========================================================

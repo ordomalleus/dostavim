@@ -24,11 +24,21 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+.col-md-2{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
 
 .navbar__header .row {
     margin-right: 10px !important;
     margin-left: 10px !important;
 }
+/*
+.row.row--relative{
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+*/
 
 /*===================Конец сетка==========================================*/
 body {
@@ -147,6 +157,11 @@ body {
 /*===================Конец Хедер меню========================================*/
 
 /*===================Меню==============================================*/
+/*Начало 1 уровень*/
+.row--relative{
+    position: relative;
+}
+
 .menu__level-1,
 .level-2__ul {
     list-style: none;
@@ -170,11 +185,66 @@ body {
     line-height: 5rem;
     text-align: justify;
     color: #666666;
+    cursor: pointer;
 }
 
+
 .level-1__li:first-child {
+    margin-left: 1rem;
+}
+
+/*Конец 1 уровень*/
+/*Начало 2 уровень*/
+.level-1__li .level-2__ul{
+    margin-top: 0.1rem;
+}
+.level-2__ul{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    padding: 0;
+    background: #fff;
+    z-index: 100;
+    display: none;
+    padding-top: 5rem;
+}
+.level-2__li{
+    position: relative;
+    height: 21rem;
+    width: 14rem;
+    margin: 0 1rem;
+    text-align: center;
+    z-index: 101;
+}
+.level-2__li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.level-2__li a:hover{
+}
+.level-2__img{
+    display: inline-block;
+    /*
+    max-width: 14rem;
+    */
+}
+.level-2__span {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 1.5rem;
+    color: #666666;
+}
+/*
+.level-2__li:nth-child(6n+1),
+.level-2__li:first-child{
     margin-left: 0;
 }
+*/
+
+/*Конец 2 уровень*/
 
 /*===================Конец Меню=========================================*/
 
