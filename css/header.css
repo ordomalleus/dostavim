@@ -219,7 +219,9 @@ body {
 .level-1__li:first-child {
     margin-left: 1rem;
 }
-
+.treug{
+    display: none
+}
 /*Конец 1 уровень*/
 /*Начало 2 уровень*/
 .level-1__li .level-2__ul{
@@ -341,12 +343,69 @@ body {
     .level-1__li.active{
         color: #222;
         /*
+        border: 0.1rem solid #00c853;
+        */
         border-top: 0.1rem solid #00c853;
         border-left: 0.1rem solid #00c853;
         border-bottom: 0.1rem solid #00c853;
-        */
-        border: 0.1rem solid #00c853;
     }
+    .level-1__li.active .level-2__ul{
+        display: block;
+    }
+    .treug{
+        position: relative;
+        width: 0.1rem;
+        height: 5rem;
+        display: inline-block;
+        float: right;
+        top: -1px;
+        left: 1px;
+    }
+    .treug::before{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 50px solid #00c853;
+    }
+    .treug::after{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 1px;
+        border-top: 24px solid transparent;
+        border-bottom: 24px solid transparent;
+        border-left: 48px solid #fff;
+    }
+
+    /*
+    .level-1__li.active p{
+        position: relative;
+        display: inline-block;
+        margin: 0;
+    }*/
+    /*
+    .level-1__li.active::before{
+        content: '';
+        position: relative;
+        left: 190px;
+        top: 0px;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 50px solid #00c853;
+    }
+    .level-1__li.active::after {
+        content: '';
+        position: relative;
+        left: 160px;
+        top: -110px;
+        border-top: 24px solid transparent;
+        border-bottom: 24px solid transparent;
+        border-left: 48px solid #fff;
+    }
+    */
     /*
     .level-1__li.active .level-2__ul{
         display: block;
