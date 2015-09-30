@@ -33,12 +33,6 @@
     margin-right: 10px !important;
     margin-left: 10px !important;
 }
-/*
-.row.row--relative{
-    margin-right: 10px !important;
-    margin-left: 10px !important;
-}
-*/
 
 /*===================Конец сетка==========================================*/
 body {
@@ -90,11 +84,6 @@ body {
 }
 
 .header__separator {
-    /*
-    width: 0.1rem;
-    height: 4rem;
-    border: 1px solid #e5e5e5;
-    */
     display: inline-block;
     margin: 0 2rem;
     margin-top: 0.5rem;
@@ -163,7 +152,6 @@ body {
     margin-right: 2rem;
 }
 .header__button span{
-    /*position: absolute;*/
     display: inline-block;
     width: 1.8rem;
     height: 1.8rem;
@@ -262,9 +250,6 @@ body {
 }
 .level-2__img{
     display: inline-block;
-    /*
-    max-width: 14rem;
-    */
 }
 .level-2__span {
     display: inline-block;
@@ -273,12 +258,6 @@ body {
     margin-top: 1.5rem;
     color: #666666;
 }
-/*
-.level-2__li:nth-child(6n+1),
-.level-2__li:first-child{
-    margin-left: 0;
-}
-*/
 
 /*Конец 2 уровень*/
 
@@ -305,12 +284,6 @@ body {
         width: 14rem !important;
     }
     /*Конец сетка*/
-    /*
-    .b__navbar{
-        position: fixed;
-        z-index: 1;
-        background: #fff;
-    }*/
     /*Хедер меню*/
     .navbar__header {
         margin: 0 0 8rem 0;
@@ -322,9 +295,6 @@ body {
     .header__logo--magazin{
         width: 4rem;
         height: 4.6rem;
-        /*
-        margin-top: 0.5rem;
-        */
         background-position: 100% 100%;
     }
     .obertka__input {
@@ -384,43 +354,6 @@ body {
         border-bottom: 2.4rem solid transparent;
         border-left: 1.4rem solid #fff;
     }
-
-    /*
-    .level-1__li.active p{
-        position: relative;
-        display: inline-block;
-        margin: 0;
-    }*/
-    /*
-    .level-1__li.active::before{
-        content: '';
-        position: relative;
-        left: 190px;
-        top: 0px;
-        border-top: 25px solid transparent;
-        border-bottom: 25px solid transparent;
-        border-left: 50px solid #00c853;
-    }
-    .level-1__li.active::after {
-        content: '';
-        position: relative;
-        left: 160px;
-        top: -110px;
-        border-top: 24px solid transparent;
-        border-bottom: 24px solid transparent;
-        border-left: 48px solid #fff;
-    }
-    */
-    /*
-    .level-1__li.active .level-2__ul{
-        display: block;
-    }
-    */
-    /*
-    .level-1__li .level-2__ul {
-        margin-top: 0;
-    }
-    */
         /*конец 1 уровень*/
         /*начало 2 уровень*/
     .level-2__ul{
@@ -433,5 +366,13 @@ body {
     }
         /*конец 2 уровень*/
     /*Конец Меню*/
+}
+@media (min-width: 540px) and (max-width: 799px) {
+    .container {
+        width: 480px !important;
+    }
 
+    .col-sm-4 {
+        width: 50% !important;
+    }
 }
