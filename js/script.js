@@ -2,27 +2,12 @@ $(window).load(function () {
 
     //==========================================================
 
-    //Проверка на Touch
-
-    //Первая функция для проверки
-    /*
-    function isTouch() {
-        try {
-            document.createEvent("TouchEvent");
-            return true;
-        }
-        catch (e) {
-            return false;
-        }
-    }
-    */
-    //Вторая функция для проверки
+    //Проверка на Touch на странице товаров
     function is_touch_device() {
         return (('ontouchstart' in window)
         || (navigator.MaxTouchPoints > 0)
         || (navigator.msMaxTouchPoints > 0));
     }
-
     //уберает класс у товара если не Touch
     $(function () {
         if (!is_touch_device()){
@@ -34,7 +19,7 @@ $(window).load(function () {
 
     //==========================================================
 
-    //добовление в избранное
+    //добовление в избранное на странице товаров
     $(function () {
         $(".price__favorites").on('click', function () {
             if ($(this).hasClass('price__favorites--off')) {
@@ -51,7 +36,7 @@ $(window).load(function () {
 
     //==========================================================
 
-    //добовление в корзину
+    //добовление в корзину на странице товаров
     $(function () {
         $(".price__basket").on('click', function () {
             var b_line_content_basket = $(this).parent().parent('.b-line__content');
@@ -73,7 +58,7 @@ $(window).load(function () {
 
     //==========================================================
 
-    //добовление новых 12 товаров
+    //добовление новых 12 товаров на странице товаров
     $(function () {
         $(".b-page__button").on('click', function (event) {
             event.preventDefault();
@@ -90,37 +75,79 @@ $(window).load(function () {
     //==========================================================
 
     //скрипт для меню
-    /*
-    $(function () {
-        $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li").hover(
-            function(){
-                $(this).find("ul.level-2__ul").css("display","block");
-            },
-            function(){
-                $(this).find("ul.level-2__ul").css("display","none");
-            }
-        );
-    });
-    */
+        //функция установки высоты первого уровня меню не ниже чем у второго уровня при 800 < width <1060
+    function setMenuLvlOneToLvlLast(){
+        var FirstLi = $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li.active");
+        var newCss = FirstLi.find("ul.level-2__ul").css('height');
+        var oldCss = FirstLi.parent('.row--relative').css('height');
+        if(newCss >= oldCss){
+            FirstLi.parent('.row--relative').css('min-height', newCss);
+        } else{
+            //сбросит высоту 1 уровня меню
+            FirstLi.parent('.row--relative').css('min-height', 320);
+        }
+    }
+        //основная функция обработки меню при всех стостояниях
+    function menuAll(liFirst){
+        if ($(window).width() >= '1060') {
+            //отменяем назначеные события
+            liFirst.unbind();
+            //сброс высоты
+            liFirst.parent('.row--relative').css('min-height', 50);
+            liFirst.hover(
+                function(){
+                    $(this).find("ul.level-2__ul").stop(false,true).fadeIn(300);
+                },
+                function(){
+                    $(this).find("ul.level-2__ul").stop(false,true).fadeOut(300);
+                }
+            );
+        }
+        if('800' <= $(window).width() &&  $(window).width() < '1060') {
+            //установим одинаковую высоту разных уровней меню
+            setMenuLvlOneToLvlLast();
+            //отменяем назначеные события
+            liFirst.unbind();
+            liFirst.click(function() {
+                if (!$(this).hasClass('active')) {
+                    //находим li с классом active. Удаляем клас и удаляем div.treug
+                    $(this).parent().find('li.level-1__li.active').find("ul.level-2__ul").css('display' , 'none');
+                    $(this).parent().find('li.level-1__li.active').removeClass('active').find('.treug').remove();
+                    $(this).addClass('active').append("<div class='treug'></div>");
+                    $(this).find("ul.level-2__ul").css('display' , 'block');
+                    setMenuLvlOneToLvlLast();
+                }
+            });
+        }
+        if('540' <= $(window).width() && $(window).width() < '800') {
+            var lol = '540-800';
+            console.log(lol);
 
+        }
+        if($(window).width() && $(window).width() < '540') {
+            var lol = '300-540';
+            console.log(lol);
+
+        }
+    }
+
+        //скрыть показать меню при width <1060, появиться кнопка в меню
     $(function () {
         $(".header__toggle").on('click', function (event) {
             event.preventDefault();
             $('.navbar__menu').toggle(300);
+            setMenuLvlOneToLvlLast();
         });
     });
 
+        //выполняет функцию по первичному определению меню. Переопределяет если менялся размер экрана
     $(function () {
-        $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li").hover(
-            function(){
-                $(this).find("ul.level-2__ul").stop(false,true).fadeIn(300);
-            },
-            function(){
-                $(this).find("ul.level-2__ul").stop(false,true).fadeOut(300);
-            }
-        );
+        var liFirst = $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li");
+        menuAll(liFirst);
+        $(window).resize(function(){
+            menuAll(liFirst);
+        });
     });
-    //под расширения
     /*
     $(function () {
         $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li").hover(
