@@ -93,7 +93,7 @@ $(window).load(function () {
             //отменяем назначеные события
             liFirst.unbind();
             //сброс высоты
-            liFirst.parent('.row--relative').css('min-height', 50);
+            liFirst.parent().parent('.row--relative').css('min-height', 50);
             liFirst.hover(
                 function(){
                     $(this).find("ul.level-2__ul").stop(false,true).fadeIn(300);
@@ -146,24 +146,9 @@ $(window).load(function () {
         menuAll(liFirst);
         $(window).resize(function(){
             menuAll(liFirst);
+            //console.log();
         });
     });
-    /*
-    $(function () {
-        $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li").hover(
-            function(){
-                var test = $(this).find("ul.level-2__ul");
-                test.stop(false,true).fadeIn(300);
-                var new_height = test.css('height');
-                test.parent().parent('.row--relative').css('min-height', new_height);
-                //console.log(test);
-            },
-            function(){
-                var test = $(this).find("ul.level-2__ul");
-                test.stop(false,true).fadeOut(300);
-            }
-        );
-    });*/
 
     //==========================================================
 

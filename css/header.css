@@ -187,6 +187,7 @@ body {
 /*Начало 1 уровень*/
 .row--relative{
     position: relative;
+    text-align: justify;
 }
 
 .menu__level-1,
@@ -199,6 +200,7 @@ body {
     padding: 0;
     border-top: 0.1rem solid #e5e5e5;
     border-bottom: 0.1rem solid #e5e5e5;
+    max-height: 5rem;
 }
 
 .level-1__li {
@@ -214,11 +216,15 @@ body {
     color: #666666;
     cursor: pointer;
 }
-
+.level-1_li--justify{
+    width: 100%;
+    display: inline-block;
+}
 
 .level-1__li:first-child {
     margin-left: 1rem;
 }
+
 .treug{
     display: none
 }
@@ -227,6 +233,7 @@ body {
 .level-1__li .level-2__ul{
     margin-top: 0.1rem;
 }
+
 .level-2__ul{
     position: absolute;
     top: 5rem;
@@ -334,6 +341,7 @@ body {
         /*начало 1 уровень*/
     .menu__level-1{
         border: none;
+        max-height: none;
     }
     .level-1__li {
         display: block;
