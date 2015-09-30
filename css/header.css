@@ -371,8 +371,64 @@ body {
     .container {
         width: 480px !important;
     }
-
-    .col-sm-4 {
-        width: 50% !important;
+    .col-sm-4,
+    .col-xs-2{
+        width: 33.3333333% !important;
     }
+    .row--relative{
+        margin-right: 1rem!important;
+        margin-left: 1rem!important;
+    }
+    /*Хедер меню*/
+    .navbar__header{
+        margin: 1rem 0 3rem;
+    }
+    .navbar__header--small-desctop{
+        margin-bottom: 13rem;
+    }
+    .row__header--relative {
+        position: relative;
+    }
+    .header__toggle{
+        display: inline-block;
+        float: left;
+    }
+    .header__logo--magazin{
+        width: 4rem;
+        height: 4.6rem;
+        background-position: 100% 100%;
+    }
+    .header__search{
+        position: absolute;
+        top: 11rem;
+        left: 0rem;
+        display: none;
+    }
+    .obertka__input {
+        width: 46rem;
+    }
+    .header__button p {
+        display: none;
+    }
+    /*Конец Хедер меню*/
+    /*Начало Меню*/
+    .navbar__menu{
+        display: none;
+    }
+        /*начало 1 уровень*/
+    .menu__level-1{
+        border: none;
+    }
+    .menu__level-1 .row--relative{
+        height: 5rem;
+        overflow: hidden;
+        border: 1px solid #00c853;
+    }
+        /*конец 1 уровень*/
+        /*начало 2 уровень*/
+    .level-1__li{
+        width: 100%;
+    }
+        /*конец 2 уровень*/
+    /*Конец Меню*/
 }

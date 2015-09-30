@@ -7,497 +7,485 @@
     <link rel="stylesheet" href="/css/normalize.css" type="text/css">
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap-theme.min.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/header.css" type="text/css">
 </head>
 <body class="b-header">
 <nav class="b__navbar">
-            <div class="navbar__header">
-                <div class="container">
-                    <div class="row">
-                        <!--Кнопка меню-->
-                        <button type="button" class="navbar-toggle collapsed header__toggle" data-toggle="collapse"
-                                aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!--Кнопка меню конец-->
-                        <div class="header__logo header__logo--dostavim">
-                            <!--
-                            <img class="logo_img logo_img-dostavim" src="/css/img/header/dostavim_logo.png" alt=""/>
-                            -->
-                        </div>
-                        <div class="header__separator">
-                            <!--
-                            <img class="separator__img" src="/css/img/header/separator.png" alt=""/>
-                            -->
-                        </div>
-                        <div class="header__logo header__logo--magazin">
-                            <!--
-                            <img class="logo_img logo_img--magazin" src="/css/img/header/firma_logo.png" alt=""/>
-                            -->
-                        </div>
-                        <form class="header__search" role="search">
-                            <div class="search__obertka">
-                                <input type="text" class="obertka__input" placeholder="Поиск в каталоге товаров">
-                                <button type="submit" class="search__sumbit"></button>
-                            </div>
-                        </form>
-                        <a class="header__button header__button--profil" href="#" role="button">
-                            <span></span>
-
-                            <p>Профиль</p>
-                        </a>
-                        <a class="header__button header__button--basket" href="#" role="button">
-                            <span></span>
-
-                            <p>Корзина</p>
-                        </a>
+    <div class="navbar__header">
+        <div class="container">
+            <div class="row row__header--relative">
+                <!--Кнопка меню-->
+                <button type="button" class="navbar-toggle collapsed header__toggle" data-toggle="collapse"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--Кнопка меню конец-->
+                <div class="header__logo header__logo--dostavim"></div>
+                <div class="header__separator"></div>
+                <div class="header__logo header__logo--magazin"></div>
+                <form class="header__search" role="search">
+                    <div class="search__obertka">
+                        <input type="text" class="obertka__input" placeholder="Поиск в каталоге товаров">
+                        <button type="submit" class="search__sumbit"></button>
                     </div>
+                </form>
+                <a class="header__button header__button--profil" href="#" role="button">
+                    <span></span>
+
+                    <p>Профиль</p>
+                </a>
+                <a class="header__button header__button--basket" href="#" role="button">
+                    <span></span>
+
+                    <p>Корзина</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="navbar__menu">
+        <ul class="menu__level-1">
+            <div class="container">
+                <div class="row row--relative">
+                    <li class="level-1__li active">
+                        Продукты питания
+                        <div class="treug"></div>
+                        <ul class="level-2__ul">
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/moloko_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/detskoe_li.png" alt=""/>
+                                    <span class="level-2__span">Детское питание</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
+                                    <span class="level-2__span">Бакалея</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/konservi_li.png" alt=""/>
+                                    <span class="level-2__span">Консервированные продукты</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
+                                    <span class="level-2__span">Хлебные и кондитерские изделия</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/myaso_li.png" alt=""/>
+                                    <span class="level-2__span">Мясо и мясопродукты</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/riba_li.png" alt=""/>
+                                    <span class="level-2__span">Рыба и морепродукты</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/zamarozka_li.png" alt=""/>
+                                    <span class="level-2__span">Замороженные продукты и готовые блюда</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/kofe_li.png" alt=""/>
+                                    <span class="level-2__span">Чай. Кофе. Какао.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/voda_li.png" alt=""/>
+                                    <span class="level-2__span">Напитки. Соки. Вода.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/alcohol_li.png" alt=""/>
+                                    <span class="level-2__span">Алкоголь. Табак.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level-1__li">
+                        <a href=""></a>
+                        Для детей
+                        <ul class="level-2__ul">
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/moloko_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/moloko_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/moloko_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/moloko_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/moloko_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/moloko_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level-1__li">
+                        <a href=""></a>
+                        Для дома и отдыха
+                        <ul class="level-2__ul">
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/detskoe_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/detskoe_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/detskoe_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/detskoe_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/detskoe_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/detskoe_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level-1__li">
+                        <a href=""></a>
+                        Красота и здоровье
+                        <ul class="level-2__ul">
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/konservi_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/konservi_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/konservi_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/konservi_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/konservi_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/konservi_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level-1__li">
+                        <a href=""></a>
+                        Для животных
+                        <ul class="level-2__ul">
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/myaso_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/riba_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/myaso_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/riba_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/myaso_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/riba_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level-1__li">
+                        <a href=""></a>
+                        Товары у кассы
+                        <ul class="level-2__ul">
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/zamarozka_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/kofe_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/zamarozka_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/kofe_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img img-circle img-responsive"
+                                         src="/css/img/header/zamarozka_li.png" alt=""/>
+                                    <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
+                                </a>
+                            </li>
+                            <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
+                                <a href="#">
+                                    <img class="level-2__img" src="/css/img/header/kofe_li.png" alt=""/>
+                                    <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level-1_li--justify"></li>
                 </div>
             </div>
-            <div class="navbar__menu">
-                <ul class="menu__level-1">
-                    <div class="container">
-                        <div class="row row--relative">
-                            <li class="level-1__li active">
-                                Продукты питания
-                                <div class="treug"></div>
-                                <ul class="level-2__ul">
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/moloko_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/detskoe_li.png" alt=""/>
-                                            <span class="level-2__span">Детское питание</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
-                                            <span class="level-2__span">Бакалея</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/konservi_li.png" alt=""/>
-                                            <span class="level-2__span">Консервированные продукты</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
-                                            <span class="level-2__span">Хлебные и кондитерские изделия</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/myaso_li.png" alt=""/>
-                                            <span class="level-2__span">Мясо и мясопродукты</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/riba_li.png" alt=""/>
-                                            <span class="level-2__span">Рыба и морепродукты</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/zamarozka_li.png" alt=""/>
-                                            <span class="level-2__span">Замороженные продукты и готовые блюда</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/kofe_li.png" alt=""/>
-                                            <span class="level-2__span">Чай. Кофе. Какао.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/voda_li.png" alt=""/>
-                                            <span class="level-2__span">Напитки. Соки. Вода.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/alcohol_li.png" alt=""/>
-                                            <span class="level-2__span">Алкоголь. Табак.</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level-1__li">
-                                <a href=""></a>
-                                Для детей
-                                <ul class="level-2__ul">
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/moloko_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/moloko_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/moloko_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/moloko_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/moloko_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/moloko_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/frukti_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level-1__li">
-                                <a href=""></a>
-                                Для дома и отдыха
-                                <ul class="level-2__ul">
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/detskoe_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/detskoe_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/detskoe_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/detskoe_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/detskoe_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/detskoe_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/bakaleia_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level-1__li">
-                                <a href=""></a>
-                                Красота и здоровье
-                                <ul class="level-2__ul">
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/konservi_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/konservi_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/konservi_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/konservi_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/konservi_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/konservi_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/hleb_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level-1__li">
-                                <a href=""></a>
-                                Для животных
-                                <ul class="level-2__ul">
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/myaso_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/riba_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/myaso_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/riba_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/myaso_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/riba_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level-1__li">
-                                <a href=""></a>
-                                Товары у кассы
-                                <ul class="level-2__ul">
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/zamarozka_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/kofe_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/zamarozka_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/kofe_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img img-circle img-responsive"
-                                                 src="/css/img/header/zamarozka_li.png" alt=""/>
-                                            <span class="level-2__span">Молочные продукты. Яйцо. Сыры. Lorem ipsum.</span>
-                                        </a>
-                                    </li>
-                                    <li class="level-2__li col-md-2 col-sm-4 col-xs-4">
-                                        <a href="#">
-                                            <img class="level-2__img" src="/css/img/header/kofe_li.png" alt=""/>
-                                            <span class="level-2__span">Овощи. Фрукты. Грибы.</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="level-1_li--justify"></li>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </nav>
+        </ul>
+    </div>
+</nav>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <p class="well" style="font-size: 2rem;margin-top: 4rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum laboriosam necessitatibus
+            <p class="well" style="font-size: 2rem;margin-top: 4rem">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Harum laboriosam necessitatibus
                 quidem. Laudantium, minima, recusandae? Aperiam cum error, harum id maiores rerum sunt. Aut beatae
                 blanditiis, consequatur corporis cumque dolore est expedita laborum laudantium, mollitia officiis omnis,
                 perferendis quidem quo tempora vitae voluptas? Consequatur deleniti expedita, id itaque neque numquam

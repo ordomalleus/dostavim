@@ -120,11 +120,13 @@ $(window).load(function () {
             });
         }
         if('540' <= $(window).width() && $(window).width() < '800') {
+            liFirst.unbind();
             var lol = '540-800';
             console.log(lol);
 
         }
-        if($(window).width() && $(window).width() < '540') {
+        if('300' <= $(window).width() && $(window).width() < '540') {
+            liFirst.unbind();
             var lol = '300-540';
             console.log(lol);
 
@@ -134,9 +136,18 @@ $(window).load(function () {
         //скрыть показать меню при width <1060, появиться кнопка в меню
     $(function () {
         $(".header__toggle").on('click', function (event) {
-            event.preventDefault();
-            $('.navbar__menu').toggle(300);
-            setMenuLvlOneToLvlLast();
+            if('800' <= $(window).width() &&  $(window).width() < '1060') {
+                event.preventDefault();
+                $('.navbar__menu').toggle(300);
+                setMenuLvlOneToLvlLast();
+            }
+            //добовляем управление формой поиска
+            if('540' <= $(window).width() &&  $(window).width() < '800') {
+                event.preventDefault();
+                $('.navbar__menu').toggle(300);
+                $('.header__search').toggle(300);
+                $('.navbar__header').toggleClass('navbar__header--small-desctop');
+            }
         });
     });
 
