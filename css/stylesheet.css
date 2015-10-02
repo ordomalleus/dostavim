@@ -85,7 +85,8 @@
     cursor: pointer;
 }
 
-.b-line__content--basket {
+.b-line__content--basket,
+.b-line__content--favorites{
     border: 1px solid #00c853;
 }
 
@@ -433,11 +434,10 @@
         margin-top: 0px;
     }
     .content__images{
-        position: absolute;
         width: 140px;
         max-height: 120px;
         float: left;
-        top: 30px;
+        margin-top: 30px;
         line-height: 120px;
     }
     .img-responsive.images__img {
@@ -447,7 +447,11 @@
         display: none;
     }
     .price__basket{
-        display: none;
+        display: block;
+        position: absolute;
+        top: 65px;
+        left: 140px;
+        z-index: 10;
     }
     .price__number {
         position: absolute;
@@ -463,6 +467,7 @@
     }
     .price__weight{
         padding: 0;
+        margin-left: 25px;
     }
     .b-line__content--touch .price_obertka--wight {
         text-align: left;
@@ -488,7 +493,6 @@
     .price__weight--favorites::before {
         display: none;
     }
-    .test__lol,
     .price__weight--favorites:before,
     .price__weight--basket:after{
         display: none;

@@ -22,14 +22,17 @@ $(window).load(function () {
     //добовление в избранное на странице товаров
     $(function () {
         $(".price__favorites").on('click', function () {
+            var b_line_content_basket = $(this).parent().parent('.b-line__content');
             if ($(this).hasClass('price__favorites--off')) {
                 $(this).removeClass('price__favorites--off');
                 $(this).addClass('price__favorites--on');
                 $(this).parent().find('.price__weight').addClass('price__weight--favorites');
+                b_line_content_basket.addClass('b-line__content--favorites');
             } else {
                 $(this).removeClass('price__favorites--on');
                 $(this).addClass('price__favorites--off');
                 $(this).parent().find('.price__weight').removeClass('price__weight--favorites');
+                b_line_content_basket.removeClass('b-line__content--favorites');
             }
         });
     });
@@ -52,6 +55,9 @@ $(window).load(function () {
                 b_line_content_basket.removeClass('b-line__content--basket');
                 $(this).parent().find('.price__weight').removeClass('price__weight--basket');
                 b_line_content_basket.find('.test__lol').remove();
+            }
+            if('300' <= $(window).width() && $(window).width() < '540') {
+
             }
         });
     });
@@ -129,7 +135,6 @@ $(window).load(function () {
             liFirst.unbind();
             var lol = '300-540';
             console.log(lol);
-
         }
     }
 
