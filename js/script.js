@@ -81,14 +81,20 @@ $(window).load(function () {
     //==========================================================
 
     //скрипт для меню
-        //функция установки высоты первого уровня меню не ниже чем у второго уровня при 800 < width <1060
+        //функция установки высоты первого уровня меню не ниже чем у второго уровня
     function setMenuLvlOneToLvlLast(){
         var FirstLi = $(".navbar__menu").children("ul.menu__level-1").find("li.level-1__li.active");
         var newCss = FirstLi.find("ul.level-2__ul").css('height');
         var oldCss = FirstLi.parent('.row--relative').css('height');
-        if(newCss >= oldCss){
+        if ($(window).width() >= '1060') {
             FirstLi.parent('.row--relative').css('min-height', newCss);
-        } else{
+            //Установить заглушку на весь html
+            var htmlHeight = $('html').height();
+            var tempHeight = htmlHeight - parseInt(newCss) -155; //-155 высота хедера
+            $('.border__menu--block').css('margin-top', newCss);
+            $('.border__menu--block').css('height', tempHeight + 'px');
+        }
+        if('800' <= $(window).width() &&  $(window).width() < '1060') {
             //сбросит высоту 1 уровня меню
             FirstLi.parent('.row--relative').css('min-height', 320);
         }
@@ -99,13 +105,23 @@ $(window).load(function () {
             //отменяем назначеные события
             liFirst.unbind();
             //сброс высоты
-            liFirst.parent().parent('.row--relative').css('min-height', 50);
+            //liFirst.parent().parent('.row--relative').css('min-height', 50);
             liFirst.hover(
                 function(){
-                    $(this).find("ul.level-2__ul").stop(false,true).fadeIn(300);
+                    $(this).find("ul.level-2__ul").addClass('level-2__ul--block');
+                    $(this).parent().find('li.level-1__li.active').removeClass('active');
+                    $(this).addClass('active');
+                    //$('.menu__level-1').addClass('menu__level-1--min-height-none');
+                    $('.border__menu').addClass('border__menu--block');
+                    setMenuLvlOneToLvlLast();
                 },
                 function(){
-                    $(this).find("ul.level-2__ul").stop(false,true).fadeOut(300);
+                    $(this).find("ul.level-2__ul").removeClass('level-2__ul--block');
+                    $(this).removeClass('active');
+                    $('.row--relative').css('min-height', 50);
+                    //$('.menu__level-1').removeClass('menu__level-1--min-height-none');
+                    $('.border__menu').removeClass('border__menu--block');
+                    $('.border__menu--block').css('height', 0);
                 }
             );
         }
@@ -139,6 +155,7 @@ $(window).load(function () {
     }
 
         //скрыть показать меню при width <1060, появиться кнопка в меню
+    /*
     $(function () {
         $(".header__toggle").on('click', function (event) {
             if('800' <= $(window).width() &&  $(window).width() < '1060') {
@@ -155,6 +172,7 @@ $(window).load(function () {
             }
         });
     });
+    */
 
         //выполняет функцию по первичному определению меню. Переопределяет если менялся размер экрана
     $(function () {
