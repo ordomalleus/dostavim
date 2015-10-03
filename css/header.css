@@ -450,6 +450,7 @@ body {
     }
     .obertka__input {
         width: 46rem;
+        height: 5rem;
     }
     .header__button p {
         display: none;
@@ -582,6 +583,7 @@ body {
     /*начало 1 уровень*/
     .menu__level-1{
         border: none;
+        max-height: 4rem;
     }
     .menu__level-1.menu__level-1--treug{
         max-height: none;
@@ -590,7 +592,7 @@ body {
         height: auto;
     }
     .menu__level-1 .row--relative{
-        height: 5rem;
+        height: 4rem;
         border: 1px solid #00c853;
         border-radius: 0.2rem;
     }
@@ -598,7 +600,7 @@ body {
         display: block;
         position: absolute;
         width: 5rem;
-        height: 5rem;
+        height: 4rem;
         top: 0;
         right: 0rem;
         background: url("/css/img/header/menu_btn-mini.png") no-repeat;
@@ -612,6 +614,8 @@ body {
         margin: 0;
         padding-left: 2rem;
         display: none;
+        height: 4rem;
+        line-height: 4rem;
     }
     .level-1__li:first-child {
         margin-left: 0rem;
@@ -624,6 +628,12 @@ body {
     }
     .level-1__li.active .level-2__ul{
         display: block;
+    }
+    .level-1__li .level-2__ul{
+        margin: 0;
+    }
+    .level-2__ul{
+        top: 4rem;
     }
     .level-2__ul .level-2__li{
         margin: 0;

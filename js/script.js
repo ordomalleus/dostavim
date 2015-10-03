@@ -152,7 +152,7 @@ $(window).load(function () {
                 }
             });
         }
-        if('300' <= $(window).width() && $(window).width() < '800') {
+        if('540' <= $(window).width() && $(window).width() < '800') {
             //liFirst.unbind();
             setMenuLvlOneToLvlLast();
             liFirst.click(function() {
@@ -178,6 +178,28 @@ $(window).load(function () {
 
         }
         if('300' <= $(window).width() && $(window).width() < '540') {
+            //liFirst.unbind();
+            setMenuLvlOneToLvlLast();
+            liFirst.click(function() {
+                if (!$(this).hasClass('active')) {
+                    //находим li с классом active. Удаляем клас и удаляем div.treug
+                    $(this).parent().find('li.level-1__li.active').find("ul.level-2__ul").css('display' , 'none');
+                    $(this).parent().find('li.level-1__li.active').removeClass('active');
+                    $(this).addClass('active');
+                    $(this).find("ul.level-2__ul").css('display' , 'block');
+                    setMenuLvlOneToLvlLast();
+                    $('.menu__level-1').removeClass('menu__level-1--treug');
+                    $('li.level-1__li.active').find('ul.level-2__ul').css('top', 40);
+                }
+            });
+            $('.treug__mini--menu').click(function() {
+                $('.menu__level-1').toggleClass('menu__level-1--treug');
+                //ищем высоту 2 меню
+                var topCss = $('.menu__level-1').css('height');
+                console.log('1');
+                $('li.level-1__li.active').find('ul.level-2__ul').css('top', topCss);
+                //$('li.level-1__li.active').find('ul.level-2__ul').toggle();
+            });
         }
     }
 
