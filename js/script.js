@@ -96,7 +96,12 @@ $(window).load(function () {
         }
         if('800' <= $(window).width() &&  $(window).width() < '1060') {
             //сбросит высоту 1 уровня меню
-            FirstLi.parent('.row--relative').css('min-height', 320);
+            FirstLi.parent('.row--relative').css('min-height', 380);
+            FirstLi.parent('.row--relative').css('height', newCss);
+            var htmlHeight = $('html').height();
+            var tempHeight = htmlHeight - parseInt(newCss) -155; //-155 высота хедера
+            //$('.border__menu--block').css('margin-top', newCss);
+            $('.border__menu--block').css('height', tempHeight + 'px');
         }
     }
         //основная функция обработки меню при всех стостояниях
@@ -155,24 +160,25 @@ $(window).load(function () {
     }
 
         //скрыть показать меню при width <1060, появиться кнопка в меню
-    /*
+
     $(function () {
         $(".header__toggle").on('click', function (event) {
             if('800' <= $(window).width() &&  $(window).width() < '1060') {
                 event.preventDefault();
-                $('.navbar__menu').toggle(300);
+                $('.navbar__menu').toggle();
+                $('.border__menu').toggleClass('border__menu--block');
                 setMenuLvlOneToLvlLast();
             }
             //добовляем управление формой поиска
             if('540' <= $(window).width() &&  $(window).width() < '800') {
                 event.preventDefault();
-                $('.navbar__menu').toggle(300);
-                $('.header__search').toggle(300);
+                $('.navbar__menu').toggle();
+                $('.header__search').toggle();
                 $('.navbar__header').toggleClass('navbar__header--small-desctop');
             }
         });
     });
-    */
+
 
         //выполняет функцию по первичному определению меню. Переопределяет если менялся размер экрана
     $(function () {

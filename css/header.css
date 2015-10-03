@@ -135,7 +135,7 @@ body {
     float: right;
     height: 4rem;
     font-size: 1.4rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.7rem;
     border: 0.1rem solid #00c853;
     border-radius: 2px;
     position: relative;
@@ -149,7 +149,7 @@ body {
 }
 
 .header__button--basket {
-    margin-right: 2rem;
+    margin-right: 2.4rem;
 }
 .header__button span{
     display: inline-block;
@@ -313,7 +313,7 @@ body {
     /*Конец сетка*/
     /*Хедер меню*/
     .navbar__header {
-        margin: 0 0 8rem 0;
+        margin: 3rem 0 8rem 0;
     }
     .header__toggle{
         display: inline-block;
@@ -344,13 +344,19 @@ body {
         display: block;
         width: 18rem;
         padding-left: 2rem;
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
     }
     .level-1__li.active{
         color: #222;
         border-top: 0.1rem solid #00c853;
         border-left: 0.1rem solid #00c853;
         border-bottom: 0.1rem solid #00c853;
+        border-radius: 0.2rem;
     }
+    .level-1__li:first-child {
+         margin-left: 1.6rem;
+     }
     .level-1__li.active .level-2__ul{
         display: block;
     }
@@ -390,6 +396,7 @@ body {
     }
     .level-2__li{
         height: 16rem;
+        margin: 0 1rem 3rem 1rem;
     }
         /*конец 2 уровень*/
     /*Конец Меню*/
